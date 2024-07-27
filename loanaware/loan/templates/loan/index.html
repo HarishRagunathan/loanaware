@@ -1,0 +1,21 @@
+{% extends 'loan/layouts/main.html' %}
+{% load static %}
+{% block title %}
+<title>LoanAware</title>
+{% endblock title %}
+
+{% block content %}
+<div class="pannel">
+    <div class="pa">
+        <p><span class="h" style="font-weight: bold">Quick and Easy Loans for Your Financial Needs.</span><br><span class="para" >Our loan awareness services offer a hassle-free and streamlined borrowing experience, providing you with the funds you need in a timely manner to meet your financial requirements.</span><br><span class="button" style="margin-top: 2%;"><a href="{% url 'register' %}">Get Started</a></span></p>
+    </div>
+    <div class="pa"><img src="{% static 'images/pannel.png' %}" alt=""></div>
+</div>
+<br>
+<br>
+{% include 'loan/inc/panel.html' %}
+<br>
+<br>
+<br>
+
+{% endblock content %}

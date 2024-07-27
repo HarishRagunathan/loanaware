@@ -1,0 +1,196 @@
+
+.navbar a {
+    margin: 0 2%;
+    text-align: center;
+}
+.pannel{
+    margin-top: 8%;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-items: center;
+    
+}
+.pa p{
+    width: 80%;
+    display: grid;
+    align-items: center;
+    position: relative;
+    left: 10%;
+}
+.h{
+  font-size: 3rem;
+}
+.para{
+  font-size: 20px;
+}
+.pa a{
+    color: rgb(2, 44, 21);
+    font-size: 20px;
+    border: 1px solid rgb(2, 44, 21);
+    border-radius: 35px;
+    text-decoration: none;
+    padding: 2%;
+    font-weight: bold;
+    transition: 1s;
+}
+#login{
+    border: 1px solid rgb(2, 44, 21);
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 1s;
+    padding: 5px 10px;
+    font-size: 20px;
+    
+}
+#signup{
+    border: 1px solid rgb(2, 44, 21);
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 1s;
+    padding: 5px 15px;
+    color: white;
+    background-color: rgb(2, 44, 21);
+    font-size: 20px;
+    
+    text-align: center;
+    justify-content: center;
+}
+
+.pa a:hover{
+  color: white;
+  background-color: rgb(2, 44, 21);
+}
+.pa img{
+    width: 95%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.pannel1 {
+  margin-top: 8%;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-items: center;
+  width: 80%;
+  position: relative;
+  left: 10%;
+}
+.pa1 p {
+  width: 80%;
+  display: grid;
+  align-items: center;
+  position: relative;
+  left: 10%;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+h3 {
+  text-align: center;
+  font-size: 20px;
+}
+.pa1 img {
+  width: 95%;
+  display: grid;
+  align-items: end;
+  justify-content: end;
+  padding: 30px;
+}
+.pa1 p :nth-child(even) {
+  margin-left: 10%;
+}
+.s{
+  font-size: 20px;
+  margin: 2%;
+}
+form{
+  width:100%;
+  
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 10% 0;
+  
+}
+/* .pa2 img{
+  width: 100%;
+  height: 60vh;
+}
+.pa2{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 60vh;
+  
+} */
+
+@media screen and (max-width:900px) {
+  .pa p{
+    width: 90%;
+    position: relative;
+    left: 5%;
+    margin-bottom: 8%;
+    padding-top: 10%;
+  }
+  .pannel{
+    margin-top: 15%;
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    
+  }
+  .pa1 p {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    margin-right: 10%;
+    margin-bottom: 8%;
+  }
+  .pannel1 {
+    margin-top: 0%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+    position: relative;
+    left: 5%;
+  }
+  .h{
+    font-size: 2rem;
+  }
+  .para{
+    font-size: 15px;
+  }
+  #signup{
+    border: 1px solid rgb(2, 44, 21);
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 1s;
+    padding: 2px 5px;
+    color: white;
+    background-color: rgb(2, 44, 21);
+    font-size: 18px;
+    transition: 1s;
+    margin-top: 5%;
+}
+form{
+  width:100%;
+  position: relative;
+  left: 0%;
+  border: 0;
+  margin: 20% 0;
+  padding: 0;
+}
+
+}
+

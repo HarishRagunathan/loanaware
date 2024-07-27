@@ -1,0 +1,63 @@
+{% extends 'loan/layouts/main.html' %}
+{% load static %}
+{% block title %}
+<title>LoanAware</title>
+{% endblock title %}
+
+{% block content %}
+<form method="POST" action="" >
+    <h2 style="text-align: center; margin-bottom: 10%;">Signup</h2>
+    {% csrf_token %}
+    <div class="mb-4">
+        <label for="" class="form-lable">User name</label>
+        {{form.username}} 
+        {% if form.errors.username %}
+         <label class="text-danger d-block">{{ form.errors.username }}</label>
+        {% endif %}
+        
+    </div>
+    <div class="mb-4">
+        <label for="" class="form-lable">Email</label>
+        {{form.email}} 
+        {% if form.errors.email %}
+        <label class="text-danger d-block">{{ form.errors.email }}</label>
+        {% endif %}
+       
+    </div>
+    <div class="mb-4">
+        <label for="" class="form-lable">Age</label>
+        {{form.age}} 
+        {% if form.errors.age %}
+        <label class="text-danger d-block">{{ form.errors.age }}</label>
+        {% endif %}
+       
+    </div>
+    <div class="mb-4">
+        <label for="" class="form-lable">Annual income</label>
+        {{form.annual_income}} 
+        {% if form.errors.annual_income %}
+        <label class="text-danger d-block">{{ form.errors.annual_income }}</label>
+        {% endif %}
+       
+    </div>
+    <div class="mb-4">
+        <label for="" class="form-lable">Password</label>
+        {{form.password1}} 
+        {% if form.errors.password1 %}
+        <label class="text-danger d-block">{{ form.errors.password1 }}</label>
+        {% endif %}
+       
+    </div>
+    <div class="mb-4">
+        <label for="" class="form-lable">Confrim Password</label>
+        {{form.password2}}
+        {% if form.errors.password2 %}
+        <label class="text-danger d-block">{{ form.errors.password2 }}</label>
+        {% endif %}
+    </div>
+    <button type="submit" class="btn btn-primary" style="background-color: rgb(2, 44, 21);">Sign up</button>
+    <p class="my-2">Already User ?<a href="{% url 'login' %}">Login Now</a></p>
+</form>
+
+
+{% endblock content %}

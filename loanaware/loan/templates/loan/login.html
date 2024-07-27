@@ -1,0 +1,23 @@
+{% extends 'loan/layouts/main.html' %}
+{% load static %}
+{% block title %}
+<title>LoanAware</title>
+{% endblock title %}
+
+{% block content %}
+<form method="POST" action="">
+    <h2 style="text-align: center; margin-bottom: 15%;">Login</h2>
+    {% csrf_token %}
+    <div class="mb-4">
+        <label for="" class="form-lable">User name</label>
+        <input type="text" name="username" id="username" class="form-control" placeholder="Enter username">
+    </div>
+    
+    <div class="mb-4">
+        <label for="" class="form-lable">Password</label>
+        <input type="password" name="password" id="password" class="form-control" placeholder="Enter password">
+       
+    </div>
+    <button type="submit" class="btn btn-primary" style="background-color: rgb(2, 44, 21);">Login</button>
+</form>
+{% endblock content %}
